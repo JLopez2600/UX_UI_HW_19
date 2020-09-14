@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+.navbar-container{
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    background: none;
+ }
+ .logo-container{
+     display:inline-block;
+     width: 20%;
+     line-height: 80px;
+     text-align: center;
+     vertical-align: middle;
+ }
+ .logo-container span{
+     font-size: 40px;
+     color: white;
+ }
+
+ .menu-container{
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ .menu-container ul li{
+     display: inline;
+     font-size: 20px;
+     font-family: sans-serif;
+     margin-left: 50px;
+     float: right;
+     font-weight: 900;
+     color: white;
+ }
+
+ .menu-container li:hover{
+    cursor: pointer;
+  }
+
+.background-img-container{
+    background-image: url("https://www.protocol.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMzE4MjY1Ny9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTYyMDEwOTY4Mn0.kxJVUGG3aE8o1YL5K0nuOe_hV8kiky3DJaxaYS6LjRQ/image.jpg?width=980");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .content p{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 2;
+    font-family: serif;
+    color: white;
+    font-size: 20px;
+}
+
+.content-container .button-container{
+   text-align: center;
+}
+
+section .content div button{
+    background: orange;
+    border-radius: 50px;
+    width: 40%;
+    height: 70px;
+    border: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.my-skills{
+    text-align: center;
+    margin: 5%;
+    font-size: 50px;
+}
+
+.flex-container{
+    display: flex;
+}
+.flex-container div{
+    width: 33%;
+    margin: 3%;
+    text-align: center;
+}
+
+.flex-container h3, p{
+    margin-top: 3%;
+}
+
+.flex-container .column-one img{
+    width: 33%;
+    height: auto;
+}
+
+
+.flex-container .column-two img{
+    width: 33%;
+    height: auto;
+}
+
+.flex-container .column-three img{
+    width: 33%;
+    height: auto;
+}
+
+/*
+skills section and work section
+*/
+
+.my-work h1{
+    text-align: center;
+    margin: 5%;
+    font-size: 50px;
+}
+
+.work-grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+img-one img{
+    width: 100%;
+    height: auto;
+}
+.content-one{
+    padding-top: 2%;
+}
+
+.content-one button{
+    font-size: 20px;
+    height: 50px;
+    background: #4c6edf;
+    border: none;
+    color: white;
+}
+
+.content-one p{
+    padding: 10px;
+    line-height: 2;
+}
+.content-one h4{
+    font-size: 30px;
+}
+
+.content-two p{
+    padding: 10px;
+    line-height: 2;
+}
+.content-one div{
+    margin-top: 1%;
+    background: #4c6edf;
+    align-self: center;
+    width: 40%;
+    border-radius: 50px;
+    margin: auto;
+}
+.img-two{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+img-two img{
+    width: 50%;
+    height: auto;
+}
+.content-two{
+    padding-top: 2%;
+}
+
+.content-two button{
+    font-size: 20px;
+    height: 50px;
+    background: #4c6edf;
+    border: none;
+    color: white;
+}
+
+.content-two h4{
+    font-size: 30px;
+}
+
+.content-two div{
+    margin-top: 1%;
+    background: #4c6edf;
+    align-self: center;
+    width: 40%;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.my-work h3{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*
+footer section at bottom of website
+*/
+
+footer{
+    background: #4c6edf;
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+footer ul li{
+    display: inline;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+/*
+Media queries to make website responsive at 600px (mobile phone)
+*/
+
+@media only screen and (max-width: 600px){
+
+    /*
+    html and body
+    */
+
+    html, body{
+        width: 600px;
+    }
+
+    /*
+    container section
+    */
+
+     /*
+    navbar section
+    */
+
+     /*
+    content section
+    */
+
+     /*
+    skills section
+    */
+    .flex-container{
+        direction: column;
+    }
+
+      /*
+    work section
+    */
+    .work-grid-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .img-one{
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+    .content-one{
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    .img-two{
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+    .content-two{
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+      /*
+    footer section
+    */
+    .footer{
+        width: 100%;
+    }
+}
